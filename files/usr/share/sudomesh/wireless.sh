@@ -7,7 +7,7 @@ for file in $depends; do
   then
     . "$file"
   else
-    log "$file does not exist. wireless.sh functions depend on it"
+    logger "$file does not exist. wireless.sh functions depend on it"
     exit 2
   fi
 done
